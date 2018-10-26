@@ -47,21 +47,22 @@ function createNumbers(inputNum) {
   for(var i= 0; i<= inputNum; i++){
     numbersArray.push(i);
     }
-    for (var i = 0; i < numbersArray.length; i ++){
-      if (numbersArray.includes(zero)){
-        // console.log("zero");
-        numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "boop!")
-        debugger
+    for (var i = 0; i <= numbersArray.length; i ++){
+     if (numbersArray.includes(zero)){
+       numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "Beep!")
+     }
+     else if (numbersArray.includes(one)){
+       numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "Boop!")
+     }
+     else if (numbersArray[i] % 3 == 0){
+      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "I'm sorry Dave, I'm afraid I can't do that.")
       }
-      if (numbersArray.includes(one)){
-        // console.log("one");
-        numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep!")
 
-      }
+
       // console.log(numbersArray.includes(digit));
     }
     return numbersArray;
-    console.log(numbersArray);
+    // console.log(numbersArray);
   }
 
     // console.log(numbersArray);
