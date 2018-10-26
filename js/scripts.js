@@ -1,59 +1,27 @@
 //---Business Logic---
 var numbersArray = [];
 
-function countToNumber(number){
-  createArray();
-  
-  for (var i = 0; createArray.length; i ++){
-    if (createArray[i] > createArray){
-      numbersArray.push(createArray[i]);
-    }
+function createNumber(inputNum) {
+  var number = parseInt(inputNum);
+  // return number;
+
+  for(var i= 0; i<= number; i++){
+    numbersArray.push(i);
+    // debugger
   }
-  return numbersArray;
-  console.log(numbersArray)
+
+  console.log(numbersArray);
 }
-
-  var createArray = function(inputNum) {
-    var numberToArray = parseInt(inputNum);
-    return numberToArray;
-    debugger
-  }
-
-
-  // function replace0(arrayofNumbers){
-  //   var array = createArray(number)
-  //   for (var = 0; i < arrayWit)
-  // }
-
-
-
-
-
-
-
-
-  // var arrayToIndvNum = function(numbertoArray){
-  //   createArray.forEach(function(numbertoArray){
-  //     parseInt();
-  //     debugger
-  //   })
-  //   return arrayToIndvNum;
-  //   console.log(arrayToIndvNum);
-  //
-  //   createArray();
-  // }
-
-
-
 //---User Interface Logic---
 $(document).ready(function(){
   $("form#numberEnter").submit(function(event){
     event.preventDefault();
     var inputNum = ($("input#number").val());
-    var result = countToNumber(inputNum);
+    var result = createNumber(inputNum);
     console.log(result);
+    console.log(numbersArray);
 
-    $(".outputNumbers").html(result);
+    $(".outputNumbers").html(numbersArray);
     // console.log(inputNum);
 
     $(".output").show();
