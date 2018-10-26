@@ -1,6 +1,6 @@
 # Number Replacer
 
-#### By Paige Williams
+#### By Paige Williams, October 26th 2018
 
 ## Description
 
@@ -18,14 +18,22 @@ _This is an excercise in JavaScript arrays and looping. The application inputs a
 
 ## Objectives
 
-[x] JavaScript business logic and user interface logic are separate.
-[x] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
-[x] Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
-[x] All previous objectives have been met.
-[x] Logic is broken down into "plain English" specs, listed in README.
-[x] Project is in a presentable, portfolio-quality state.
+[X] JavaScript business logic and user interface logic are separate.
+
+[X] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+
+[X] Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
+
+[X] All previous objectives have been met.
+
+[X] Logic is broken down into "plain English" specs, listed in README.
+
+[X] Project is in a presentable, portfolio-quality state.
+
 [ ] Required functionality is in place by Friday deadline.
-[x] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+
+[X] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+
 [ ] Application implements a loop and works as expected.
 
 ## Specifications
