@@ -6,19 +6,20 @@ function createNumbers(inputNum) {
   var number = parseInt(inputNum);
   for(var i= 0; i<= number; i++){
     numbersArray.push(i);
-    console.log(numbersArray);
+    // console.log(numbersArray);
     }
   // debugger
   for (var i = 0; i < numbersArray.length; i ++){
-    if (numbersArray[i] === 0){
+    if ((numbersArray[i] === 0 ) || (numbersArray[i] === 10 )) {
       numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep")
     }
     // debugger
     if (numbersArray[i] === 1){
       numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "boop")
     }
-
-    
+    if (numbersArray[i] % 3==0){
+      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "I'm sorry Dave, I'm afraid I can't do that.")
+    }
 
     // debugger
     // return numbersArray.join(", ");
@@ -55,7 +56,7 @@ $(document).ready(function(){
     console.log(result);
     // console.log(numbersArray);
 
-    $(".outputNumbers").text(numbersArray);
+    $("#output").append('<li>' + numbersArray + '</li>');
     // console.log(inputNum);
 
     $(".output").show();
