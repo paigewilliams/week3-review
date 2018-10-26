@@ -1,10 +1,10 @@
-# _[title]_
+# Number Replacer
 
 #### By Paige Williams
 
 ## Description
 
-_[description]_
+_This is an excercise in JavaScript arrays and looping. The application inputs a number from the user and once submitted, returns a list of numbers up to the number inputted. However, numbers that contain the digit 0 and 1 are replaced with the words "Beep" and "Boop." Additionally, numbers that are divisible by three are replaced with the phrase, "I'm sorry Dave, I'm afraid I can't do that."_
 
 ## Setup/Installation Requirements
 
@@ -18,14 +18,14 @@ _[description]_
 
 ## Objectives
 
-[ ] JavaScript business logic and user interface logic are separate.
-[ ] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
-[ ] Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
-[ ] All previous objectives have been met.
-[ ] Logic is broken down into "plain English" specs, listed in README.
-[ ] Project is in a presentable, portfolio-quality state.
+[x] JavaScript business logic and user interface logic are separate.
+[x] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+[x] Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
+[x] All previous objectives have been met.
+[x] Logic is broken down into "plain English" specs, listed in README.
+[x] Project is in a presentable, portfolio-quality state.
 [ ] Required functionality is in place by Friday deadline.
-[ ] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+[x] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
 [ ] Application implements a loop and works as expected.
 
 ## Specifications
