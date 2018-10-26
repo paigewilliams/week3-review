@@ -39,8 +39,8 @@ _This is an excercise in JavaScript arrays and looping. The application inputs a
 ## Specifications
 
 1. It should take a number from the user and return that number in the html.
-  - Example Input: 1
-  - Example Output: 1
+    - Example Input: 1
+    - Example Output: 1
 2. It should take a number from the user and return a range of numbers from 0 to the user input.
     - Example Input: 5
     - Example Output: 0, 1, 2, 3, 4, 5
