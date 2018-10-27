@@ -45,8 +45,16 @@ var numbersArray = [];
 function createNumbers(inputNum) {
   // var number = parseInt(inputNum);
   for(var i= 0; i<= inputNum; i++){
+    // numbersArray.toString();
     numbersArray.push(i);
+    console.log(numbersArray);
     }
+    var numbersString = numbersArray.toString();
+    return numbersString;
+    debugger
+    console.log(numbersString)
+
+
     for (var i = 0; i <= numbersArray.length; i ++){
      if (numbersArray.includes(zero)){
        numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "Beep!")
@@ -57,6 +65,7 @@ function createNumbers(inputNum) {
      else if (numbersArray[i] % 3 == 0){
       numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "I'm sorry Dave, I'm afraid I can't do that.")
       }
+
 
 
       // console.log(numbersArray.includes(digit));
