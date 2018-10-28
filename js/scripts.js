@@ -54,15 +54,17 @@ function createNumbers(inputNum) {
 
   var beepReplaceZero = [];
   for (var i = 0; i <= numbersArray.length; i ++){
-   var numbersToString = numbersArray.join();
+   var numbersToString = numbersArray.join('');
    console.log(numbersToString);
-    if (numbersToString.includes(zero)){
-       beepReplaceZero.push("beep");
+    if (numbersToString[i].includes(zero)){
+       beepReplaceZero.push("Beep");
    }
    else {
      beepReplaceZero.push(i)
    }
+   // debugger
    console.log(beepReplaceZero);
+
  }
 }
 
