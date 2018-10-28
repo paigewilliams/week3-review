@@ -44,30 +44,34 @@ var one = 1;
 var numbersArray = [];
 
 
-function createNumbers(inputNum) {
+function createNumbers(inputNum){
 
   for(var i= 0; i<= inputNum; i++){
     numbersArray.push(i);
-    console.log(numbersArray);
   }
+  console.log(numbersArray);
 }
 
-function replaceNumbersWithWords (inputNum)
-  var beepReplaceZero = [];
-  for (var i = 0; i <= numbersArray.length; i ++){
-   var numbersToString = numbersArray.toString();
-   console.log(numbersToString);
-    if (numbersToString[i].includes(zero)){
-       beepReplaceZero.push("Beep");
-   }
-   else {
-     beepReplaceZero.push(i)
-   }
-   // debugger
-   console.log(beepReplaceZero);
+var beepReplaceZero = [];
+function replaceNumbersWithWords(inputNumArray){
+  var numbersToString = numbersArray.join("");
+  console.log(numbersToString);
 
- }
+  var numbersIndvArray = numbersToString.split("");
+  console.log(numbersIndvArray);
+  // for (var i = 0; i < numbersArray.length; i++){
+  //   if (numbersToString[i].includes(zero)){
+  //      beepReplaceZero.push("Beep");
+  //  }
+  //  else {
+  //    beepReplaceZero.push(i)
+  //  }
+  //  // debugger
+
 }
+// console.log(beepReplaceZero);
+// return(beepReplaceZero)
+// }
 
 
 
@@ -126,13 +130,13 @@ $(document).ready(function(){
     event.preventDefault();
     var inputNum = parseInt($("input#number").val());
 
-    var result = createNumbers(inputNum);
+    var result = replaceNumbersWithWords(createNumbers(inputNum));
     // console.log(typeof inputNum);
     // console.log(numbersArray);
     // result.forEach(function(num){
     // $("#outputList").append('<li>' + num + '</li>');
     // })
-    $("#outputList").text(numbersArray);
+    $("#outputList").text(beepReplaceZero);
     // console.log(inputNum);
 
     $(".output").show();
