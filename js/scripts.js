@@ -52,9 +52,18 @@ function createNumbers(inputNum) {
   }
    var numbersToString = numbersArray.join();
    console.log(numbersToString);
- 
-   var BeepReplaceZero = numbersToString.replace(0, "Beep");
-   console.log(BeepReplaceZero);
+
+   var beepReplaceZero = numbersToString.replace(/0/gi, "Beep!");
+   console.log(beepReplaceZero);
+
+   // var beepReplaceZeroArray = beepReplaceZero.split('')
+   // console.log(beepReplaceZeroArray);
+
+
+   // for (var i = 0; i<= numbersToString.length; i ++ ){
+   // var BeepReplaceZero = numbersToString.replace("Beep");
+   // console.log(BeepReplaceZero);
+   // }
 
    // var stringToNewArray = numbersToString.split();
    // console.log(stringToNewArray);
