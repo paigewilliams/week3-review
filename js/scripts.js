@@ -50,13 +50,31 @@ function createNumbers(inputNum) {
     numbersArray.push(i);
     console.log(numbersArray);
   }
+
+
+  var beepReplaceZero = [];
+  for (var i = 0; i <= numbersArray.length; i ++){
    var numbersToString = numbersArray.join();
    console.log(numbersToString);
-
-   var beepReplaceZero = numbersToString.replace(/0/gi, "Beep!");
+    if (numbersToString.includes(zero)){
+       beepReplaceZero.push("beep");
+   }
+   else {
+     beepReplaceZero.push(i)
+   }
    console.log(beepReplaceZero);
+ }
+}
 
-   // var beepReplaceZeroArray = beepReplaceZero.split('')
+
+
+   // var beepReplaceZero = numbersToString.replace(/0/gi, "Beep!");
+   // console.log(beepReplaceZero);
+   //
+   // var boopReplaceOne = numbersToString.replace(/1/gi, "Boop!")
+   // console.log(boopReplaceOne)
+
+   // var beepReplaceZeroArray = beepReplaceZero.split(",")
    // console.log(beepReplaceZeroArray);
 
 
@@ -87,7 +105,6 @@ function createNumbers(inputNum) {
    //  }
    //  return numbersArray;
         // return numbersToString;
-  }
 
 
 
@@ -109,9 +126,9 @@ $(document).ready(function(){
     var result = createNumbers(inputNum);
     // console.log(typeof inputNum);
     // console.log(numbersArray);
-    // result.forEach(function(num){
-    // $("#outputList").append('<li>' + num + '</li>');
-    // })
+    result.forEach(function(num){
+    $("#outputList").append('<li>' + num + '</li>');
+    })
     $("#outputList").text(numbersArray);
     // console.log(inputNum);
 
