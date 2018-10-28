@@ -59,6 +59,18 @@ function replaceNumbersWithWords(inputNumArray){
 
   var numbersIndvArray = numbersToString.split("");
   console.log(numbersIndvArray);
+
+  for (var i = 0; i < numbersIndvArray.length; i ++){
+    if (numbersIndvArray[i].includes("0")){
+      numbersIndvArray.splice(numbersIndvArray.indexOf(numbersIndvArray[i]), 1, "Beep")
+    }
+    // console.log(array);
+  }
+  console.log(numbersIndvArray);
+  var stringWithBeep = numbersIndvArray.join();
+  console.log(stringWithBeep);
+}
+
   // for (var i = 0; i < numbersArray.length; i++){
   //   if (numbersToString[i].includes(zero)){
   //      beepReplaceZero.push("Beep");
@@ -68,7 +80,7 @@ function replaceNumbersWithWords(inputNumArray){
   //  }
   //  // debugger
 
-}
+// }
 // console.log(beepReplaceZero);
 // return(beepReplaceZero)
 // }
