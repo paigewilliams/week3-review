@@ -25,7 +25,7 @@ function createNumbers(inputNum) {
       numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "boop!")
     }
     if(numbersArray[i] > 19 && numbersArray[i] %10 == 0){
-      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "boop!")
+      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep!")
     }
 
 
