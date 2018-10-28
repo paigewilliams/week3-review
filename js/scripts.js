@@ -42,29 +42,43 @@
 var zero = 0;
 var one = 1;
 var numbersArray = [];
+
+
 function createNumbers(inputNum) {
 
   for(var i= 0; i<= inputNum; i++){
     numbersArray.push(i);
     console.log(numbersArray);
   }
-   // var numbersToString = numbersArray.join('');
-   // console.log(numbersToString);
-    for (var i = 0; i <= numbersArray.length; i ++){
-      // debugger
-      if (numbersArray.includes(zero)){
-        numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "Beep!")
-         // debugger
-      }
-       else if (numbersArray.includes(one)){
-         numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "Boop!")
-       }
-       else if (numbersArray[i] % 3 == 0){
-         numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "I'm sorry Dave, I'm afraid I can't do that.")
-       }
-    }
-    return numbersArray;
-   }
+   var numbersToString = numbersArray.join();
+   console.log(numbersToString);
+ 
+   var BeepReplaceZero = numbersToString.replace(0, "Beep");
+   console.log(BeepReplaceZero);
+
+   // var stringToNewArray = numbersToString.split();
+   // console.log(stringToNewArray);
+
+   // if (numbersToString.includes(zero)){
+   //   console.log("working");
+   //
+   // }
+   //  for (var i = 0; i <= numbersArray.length; i ++){
+   //    // debugger
+   //    if (numbersArray.includes(zero)){
+   //      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "Beep!")
+   //       // debugger
+   //    }
+   // //     else if (numbersArray.includes(one)){
+   // //       numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "Boop!")
+   // //     }
+   // //     else if (numbersArray[i] % 3 == 0){
+   // //       numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "I'm sorry Dave, I'm afraid I can't do that.")
+   // //     }
+   //  }
+   //  return numbersArray;
+        // return numbersToString;
+  }
 
 
 
@@ -86,9 +100,9 @@ $(document).ready(function(){
     var result = createNumbers(inputNum);
     // console.log(typeof inputNum);
     // console.log(numbersArray);
-    result.forEach(function(num){
-    $("#outputList").append('<li>' + num + '</li>');
-    })
+    // result.forEach(function(num){
+    // $("#outputList").append('<li>' + num + '</li>');
+    // })
     $("#outputList").text(numbersArray);
     // console.log(inputNum);
 
