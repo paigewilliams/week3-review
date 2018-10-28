@@ -50,11 +50,12 @@ function createNumbers(inputNum) {
     numbersArray.push(i);
     console.log(numbersArray);
   }
+}
 
-
+function replaceNumbersWithWords (inputNum)
   var beepReplaceZero = [];
   for (var i = 0; i <= numbersArray.length; i ++){
-   var numbersToString = numbersArray.join('');
+   var numbersToString = numbersArray.toString();
    console.log(numbersToString);
     if (numbersToString[i].includes(zero)){
        beepReplaceZero.push("Beep");
@@ -128,9 +129,9 @@ $(document).ready(function(){
     var result = createNumbers(inputNum);
     // console.log(typeof inputNum);
     // console.log(numbersArray);
-    result.forEach(function(num){
-    $("#outputList").append('<li>' + num + '</li>');
-    })
+    // result.forEach(function(num){
+    // $("#outputList").append('<li>' + num + '</li>');
+    // })
     $("#outputList").text(numbersArray);
     // console.log(inputNum);
 
