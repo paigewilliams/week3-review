@@ -54,20 +54,20 @@ function createNumbers(inputNum){
 
 var beepReplaceZero = [];
 function replaceNumbersWithWords(inputNumArray){
+
   var numbersToString = numbersArray.join("");
   console.log(numbersToString);
 
   var numbersIndvArray = numbersToString.split("");
   console.log(numbersIndvArray);
-
   for (var i = 0; i < numbersIndvArray.length; i ++){
-    if (numbersIndvArray[i].includes("0")){
+    if (numbersIndvArray[i].includes("0") === true){
       numbersIndvArray.splice(numbersIndvArray.indexOf(numbersIndvArray[i]), 1, "Beep")
     }
     // console.log(array);
   }
   console.log(numbersIndvArray);
-  var stringWithBeep = numbersIndvArray.join();
+  var stringWithBeep = numbersIndvArray.join("");
   console.log(stringWithBeep);
 }
 
