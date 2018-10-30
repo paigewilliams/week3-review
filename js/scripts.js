@@ -1,50 +1,55 @@
 //---Business Logic---
-var numbersArray = [];
 
-function createNumbers(inputNum) {
-  var number = parseInt(inputNum);
+function createNumbers(number) {
+  var numbersArray = [];
+
   for(var i= 0; i<= number; i++){
-    numbersArray.push(i);
+    if (i % 3 === 0){
+      numbersArray.push("I'm sorry Dave, I'm afraid I can't do that.")
     }
-
-  for (var i = 0; i < numbersArray.length; i ++){
-
-    if (numbersArray[i] === 0){
-      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep!")
+    else{
+      numbersArray.push(i)
     }
-    if (numbersArray[i] === 1){
-      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "boop!")
-    }
-    if (numbersArray[i] % 3 == 0){
-      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "I'm sorry Dave, I'm afraid I can't do that.")
-    }
-    if(numbersArray[i] === 10 ){
-      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep!")
-    }
-    if(numbersArray[i] >= 11 && numbersArray[i] %10 == 1){
-      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "boop!")
-    }
-    if(numbersArray[i] > 19 && numbersArray[i] %10 == 0){
-      numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep!")
-    }
-
+  }
+    console.log(numbersArray);
+    return numbersArray;
 
   }
+  // for (var i = 0; i < numbersArray.length; i ++){
+  //
+  //   if (numbersArray[i] === 0){
+  //     numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep!")
+  //   }
+  //   if (numbersArray[i] === 1){
+  //     numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "boop!")
+  //   }
+  //   if (numbersArray[i] % 3 == 0){
+  //     numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "I'm sorry Dave, I'm afraid I can't do that.")
+  //   }
+  //   if(numbersArray[i] === 10 ){
+  //     numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep!")
+  //   }
+  //   if(numbersArray[i] >= 11 && numbersArray[i] %10 == 1){
+  //     numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "boop!")
+  //   }
+  //   if(numbersArray[i] > 19 && numbersArray[i] %10 == 0){
+  //     numbersArray.splice(numbersArray.indexOf(numbersArray[i]), 1, "beep!")
+  //   }
+  //
+  //
+  // }
 
-  return numbersArray;
-
-}
 
 //---User Interface Logic---
 $(document).ready(function(){
   $("form#numberEnter").submit(function(event){
     event.preventDefault();
-    var inputNum = ($("input#number").val());
+    var inputNum = parseInt($("input#number").val());
     var result = createNumbers(inputNum);
     console.log(result);
     // console.log(numbersArray);
     result.forEach(function(num){
-    $("#outputList").append('<li>' + num + '</li>');
+    $("#outputList").text(result);
     })
     // $("#outputList").text(numbersArray);
     // console.log(inputNum);
