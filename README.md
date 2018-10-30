@@ -18,39 +18,39 @@ _This is an excercise in JavaScript arrays and looping. The application inputs a
 
 ## Objectives
 
-[X] JavaScript business logic and user interface logic are separate.
+- [x] JavaScript business logic and user interface logic are separate.
 
-[X] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+- [x] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
 
-[X] Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
+- [x] Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
 
-[X] All previous objectives have been met.
+- [x] All previous objectives have been met.
 
-[X] Logic is broken down into "plain English" specs, listed in README.
+- [x] Logic is broken down into "plain English" specs, listed in README.
 
-[X] Project is in a presentable, portfolio-quality state.
+- [x] Project is in a presentable, portfolio-quality state.
 
-[ ] Required functionality is in place by Friday deadline.
+- [x] Required functionality is in place by Friday deadline.
 
-[X] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+- [x] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
 
-[ ] Application implements a loop and works as expected.
+- [x] Application implements a loop and works as expected.
 
 ## Specifications
 
-1. It should take a number from the user and return that number in the html.
-  - Example Input: 1
-  - Example Output: 1
-2. It should take a number from the user and return a range of numbers from 0 to the user input.
-    - Example Input: 5
-    - Example Output: 0, 1, 2, 3, 4, 5
-3. It should take a number from the user and return a range of numbers with the exception of if a number contains 0, it is replaced with the word, "Beep!"
-    - Example Input: 5
-    - Example Output: "Beep", 1, 2, 3, 4, 5
-  4. It should take a number from the user and return a range of numbers with the exception of if a number contains 1, it is replaced with the word, "Boop!"
-    - Example Input: 5
-    - Example Output: "Beep", "Boop", 2, 3, 4, 5,
-  5. It should take a number from the user and return a range of numbers with the exception of if it divisible by three, it is replaced with the phrase, "I'm sorry Dave, I'm afraid I can't do that."
+1. It should take a number from the user and return a range of numbers with the exception of if a number contains 0, it is replaced with the word, "Beep!"
+    - Example Input: 6
+    - Example Output: "Beep", 1, 2, 3, 4, 5, 6
+2. It should take a number from the user and return a range of numbers with the exception of if a number contains 1, it is replaced with the word, "Boop!"
+    - Example Input: 6
+    - Example Output: "Beep", "Boop", 2, 3, 4, 5, 6
+3. It should take a number from the user and return a range of numbers with the exception of if it divisible by three, it is replaced with the phrase, "I'm sorry Dave, I'm afraid I can't do that."
+  - Example Input: 6
+  - Example Output: "Beep", "Boop", 2, "I'm sorry Dave, I'm afraid I can't do that.", 4, 5, "I'm sorry Dave, I'm afraid I can't do that."
+4. It should replace numbers with the most important exception, with ability to be divisible by 3 the most important and containing 0 the least important.
+  - Example Input: 30
+  - Example Output: "Beep", "Boop", 2, "I'm sorry Dave, I'm afraid I can't do that.",..."I'm sorry Dave, I'm afraid I can't do that."
+5. It should be able to run multiple times and return new results over and over again. 
 
 ### License
 Copyright (c) 2018 MIT license.
