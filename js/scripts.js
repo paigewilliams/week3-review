@@ -7,19 +7,22 @@ function createNumbers(number) {
     if (i % 3 === 0 && i !== 0){
       numbersArray.push("I'm sorry Dave, I'm afraid I can't do that.")
     }
-    else if (i === 0){
-      numbersArray.push("Beep")
-    }
-    else if (i === 1){
+    else if ( i.toString().includes(1)) {
       numbersArray.push("Boop")
+    }
+    else if (i.toString().includes(0)) {
+      numbersArray.push("Beep")
     }
     else {
       numbersArray.push(i)
     }
   }
-  return numbersArray;
+  return numbersArray.join(", ");
 
 }
+
+
+
 
   // for (var i = 0; i < numbersArray.length; i ++){
   //
@@ -54,9 +57,9 @@ $(document).ready(function(){
     var result = createNumbers(inputNum);
     console.log(result);
     // console.log(numbersArray);
-    result.forEach(function(num){
+    // result.forEach(function(num){
     $("#outputList").text(result);
-    })
+    // })
     // $("#outputList").text(numbersArray);
     // console.log(inputNum);
 
