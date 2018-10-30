@@ -45,12 +45,12 @@ _This is an excercise in JavaScript arrays and looping. The application inputs a
     - Example Input: 6
     - Example Output: "Beep", "Boop", 2, 3, 4, 5, 6
 3. It should take a number from the user and return a range of numbers with the exception of if it divisible by three, it is replaced with the phrase, "I'm sorry Dave, I'm afraid I can't do that."
-  - Example Input: 6
-  - Example Output: "Beep", "Boop", 2, "I'm sorry Dave, I'm afraid I can't do that.", 4, 5, "I'm sorry Dave, I'm afraid I can't do that."
+    - Example Input: 6
+    - Example Output: "Beep", "Boop", 2, "I'm sorry Dave, I'm afraid I can't do that.", 4, 5, "I'm sorry Dave, I'm afraid I can't do that."
 4. It should replace numbers with the most important exception, with ability to be divisible by 3 the most important and containing 0 the least important.
-  - Example Input: 30
-  - Example Output: "Beep", "Boop", 2, "I'm sorry Dave, I'm afraid I can't do that.",..."I'm sorry Dave, I'm afraid I can't do that."
-5. It should be able to run multiple times and return new results over and over again. 
+    - Example Input: 30
+    - Example Output: "Beep", "Boop", 2, "I'm sorry Dave, I'm afraid I can't do that.",..."I'm sorry Dave, I'm afraid I can't do that."
+5. It should be able to run multiple times and return new results over and over again.
 
 ### License
 Copyright (c) 2018 MIT license.
