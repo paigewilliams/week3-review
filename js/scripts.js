@@ -4,17 +4,23 @@ function createNumbers(number) {
   var numbersArray = [];
 
   for(var i= 0; i<= number; i++){
-    if (i % 3 === 0){
+    if (i % 3 === 0 && i !== 0){
       numbersArray.push("I'm sorry Dave, I'm afraid I can't do that.")
     }
-    else{
+    else if (i === 0){
+      numbersArray.push("Beep")
+    }
+    else if (i === 1){
+      numbersArray.push("Boop")
+    }
+    else {
       numbersArray.push(i)
     }
   }
-    console.log(numbersArray);
-    return numbersArray;
+  return numbersArray;
 
-  }
+}
+
   // for (var i = 0; i < numbersArray.length; i ++){
   //
   //   if (numbersArray[i] === 0){
